@@ -19,7 +19,7 @@ This package adds custom converters for these Unity types into your project and 
 
 1. In your package manager (`Window/Package Manager`) choose the +.
 2. Select "Add from git URL"
-3. Enter ``
+3. Enter `https://github.com/AbandonedCrypt/unity-json-converters.git`
 4. You are done and ready to de-/serialize
 
 ## Supported Unity types
