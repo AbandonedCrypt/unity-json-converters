@@ -4,9 +4,7 @@ A drop-in solution providing custom converters for Unity types, *no configuratio
 
 ### The problem
 
-Newtonsoft Json, which has been officially supported as a Unity package as  `com.unity.nuget.newtonsoft-json`, has trouble serializing most native Unity types such as `Color`,
-
-`Vector2` ,   `Vector3` and many more. This is due to self-references in the struct types Unity uses, which runs Json.NET into an infinite serialization loop.
+Newtonsoft Json, which has been officially supported as a Unity package as  `com.unity.nuget.newtonsoft-json`, has trouble serializing most native Unity types such as `Color`, `Vector2` ,   `Vector3` and many more. This is due to self-references in the struct types Unity uses, which runs Json.NET into an infinite serialization loop.
 
 ### The solution
 
