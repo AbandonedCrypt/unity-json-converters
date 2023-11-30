@@ -8,7 +8,10 @@ namespace AbandonedCrypt.JSON
     {
       JsonConvert.DefaultSettings = () =>
       {
-        var settings = new JsonSerializerSettings();
+        var settings = new JsonSerializerSettings
+        {
+          TypeNameHandling = TypeNameHandling.All
+        };
         settings.Converters.Add(new ColorConverter());
         return settings;
       };
