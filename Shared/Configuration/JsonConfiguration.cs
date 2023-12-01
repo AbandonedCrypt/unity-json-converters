@@ -10,7 +10,7 @@ namespace AbandonedCrypt.JSON
       {
         var settings = new JsonSerializerSettings
         {
-          TypeNameHandling = TypeNameHandling.All
+          TypeNameHandling = TypeNameHandling.Auto
         };
         settings.Converters.Add(new ColorConverter());
         return settings;
