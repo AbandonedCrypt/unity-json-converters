@@ -1,6 +1,6 @@
 # Unity Json.NET Converters
 
-A drop-in solution providing custom converters for Unity types, *no configuration required*.
+A drop-in solution providing custom converters for Unity types to AbandonedCrypt Projects, *no configuration required*.
 
 ### The problem
 
@@ -8,7 +8,7 @@ Newtonsoft Json, which has been officially supported as a Unity package as  `com
 
 ### The solution
 
-This package adds custom converters for these Unity types into your project and automatically adds them to the default configuration of Newtonsoft Json in both editor and runtime. *No configuration required - plug and play.*
+This package adds custom converters for these Unity types and specific converters for AbandonedCrypt projects into a project and automatically adds them to the default configuration of Newtonsoft Json in both editor and runtime. *No configuration required - plug and play.*
 
 ## Installation
 
@@ -26,6 +26,6 @@ Currently only the following are supported, but with time, all will be added.
 - Vector3
 - Vector4
 
-### Why this one?
+### Who is this for?
 
-Its stupidly simple. Even a beginner could maintain a fork of this, were I to stop doing so.
+AbandonedCrypt projects. If you need custom converters for unity types you can fork this and remove all additions of non-standard custom converters.

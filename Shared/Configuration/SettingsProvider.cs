@@ -18,11 +18,5 @@ namespace AbandonedCrypt.JSON
       settings.Converters.Add(new Vector4Converter());
       Settings = settings;
     }
-
-    public static void AddConverter(JsonConverter converter)
-    {
-      if (!Settings.Converters.Contains(converter))
-        Settings.Converters.Add(converter);
-    }
   }
 }
