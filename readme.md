@@ -24,6 +24,7 @@ Currently only the following are supported, but with time, all will be added.
 - Color
 - Vector2
 - Vector3
+- Vector4
 
 ### Why this one?
 
