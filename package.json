@@ -1,6 +1,6 @@
 {
   "name": "com.abandonedcrypt.customjsonconverters",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "displayName": "Custom converters for Unity types",
   "description": "Plug-and-play custom converters for Unity types using Newtonsoft JSON",
   "unity": "2022.3",

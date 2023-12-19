@@ -8,14 +8,17 @@ namespace AbandonedCrypt.JSON
 
     static SettingsProvider()
     {
-      var settings = new JsonSerializerSettings
-      {
-        TypeNameHandling = TypeNameHandling.Auto
-      };
-      settings.Converters.Add(new ColorConverter());
-      settings.Converters.Add(new Vector2Converter());
-      settings.Converters.Add(new Vector3Converter());
-      settings.Converters.Add(new Vector4Converter());
+      var settings = JsonConvert.DefaultSettings?.Invoke();
+      if (settings == null)
+        settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto };
+      else
+        settings.TypeNameHandling = TypeNameHandling.Auto;
+
+      settings.Converters.AddIfUnoccupied(new ColorConverter());
+      settings.Converters.AddIfUnoccupied(new Vector2Converter());
+      settings.Converters.AddIfUnoccupied(new Vector3Converter());
+      settings.Converters.AddIfUnoccupied(new Vector4Converter());
+
       Settings = settings;
     }
   }
