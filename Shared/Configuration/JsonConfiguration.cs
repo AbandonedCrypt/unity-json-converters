@@ -6,18 +6,7 @@ namespace AbandonedCrypt.JSON
   {
     public static void ConfigureNewtonsoftDefaults()
     {
-      JsonConvert.DefaultSettings = () =>
-      {
-        var settings = new JsonSerializerSettings
-        {
-          TypeNameHandling = TypeNameHandling.Auto
-        };
-        settings.Converters.Add(new ColorConverter());
-        settings.Converters.Add(new Vector2Converter());
-        settings.Converters.Add(new Vector3Converter());
-        settings.Converters.Add(new Vector4Converter());
-        return settings;
-      };
+      JsonConvert.DefaultSettings = () => SettingsProvider.Settings;
     }
   }
 }
