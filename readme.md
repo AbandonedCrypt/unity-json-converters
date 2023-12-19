@@ -22,6 +22,8 @@ This package adds custom converters for these Unity types into your project and 
 Currently only the following are supported, but with time, all will be added.
 
 - Color
+- Vector2
+- Vector3
 
 ### Why this one?
 

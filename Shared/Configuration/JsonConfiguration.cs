@@ -13,6 +13,8 @@ namespace AbandonedCrypt.JSON
           TypeNameHandling = TypeNameHandling.Auto
         };
         settings.Converters.Add(new ColorConverter());
+        settings.Converters.Add(new Vector2Converter());
+        settings.Converters.Add(new Vector3Converter());
         return settings;
       };
     }
