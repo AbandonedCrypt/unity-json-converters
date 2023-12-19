@@ -15,6 +15,7 @@ namespace AbandonedCrypt.JSON
         settings.Converters.Add(new ColorConverter());
         settings.Converters.Add(new Vector2Converter());
         settings.Converters.Add(new Vector3Converter());
+        settings.Converters.Add(new Vector4Converter());
         return settings;
       };
     }
