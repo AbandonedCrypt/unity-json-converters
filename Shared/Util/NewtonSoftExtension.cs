@@ -14,15 +14,5 @@ namespace AbandonedCrypt.JSON
       if (!list.Any(item => item.CanConvert(converter.GetType())))
         list.Add(converter);
     }
-
-    /// <summary>
-    /// Adds a converter and removes all other converters targeting the same type.
-    /// </summary>
-    public static void OverwriteAll(this IList<JsonConverter> list, JsonConverter converter)
-    {
-      if (list.Any(item => item.CanConvert(converter.GetType())))
-        ((List<JsonConverter>)list).RemoveAll(item => item.CanConvert(converter.GetType()));
-      list.Add(converter);
-    }
   }
 }

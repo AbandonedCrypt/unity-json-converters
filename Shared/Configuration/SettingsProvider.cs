@@ -8,11 +8,7 @@ namespace AbandonedCrypt.JSON
 
     static SettingsProvider()
     {
-      var settings = JsonConvert.DefaultSettings?.Invoke();
-      if (settings == null)
-        settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto };
-      else
-        settings.TypeNameHandling = TypeNameHandling.Auto;
+      var settings = JsonConvert.DefaultSettings?.Invoke() ?? new JsonSerializerSettings();
 
       settings.Converters.AddIfUnoccupied(new ColorConverter());
       settings.Converters.AddIfUnoccupied(new Vector2Converter());

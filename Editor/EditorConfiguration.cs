@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEditor;
 
 namespace AbandonedCrypt.JSON
@@ -11,3 +12,4 @@ namespace AbandonedCrypt.JSON
     }
   }
 }
+#endif
